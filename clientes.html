@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style> 
+    table,th,td {border: 1px solid black;}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="funcionesGenerales.js"></script>
+   <script src="clientes.js"></script>
+    <title>Clientes</title>
+</head>
+<body onload="TraerDatosClientes()">
+    <h1>
+        Clientes
+    </h1>
+    <div>
+        <table id="tabla">
+
+        </table>
+    </div>
+    <h3>
+      Agregar Cliente  
+    </h3>
+    <div>
+        <input type="number" id="id" placeholder="Id Cliente"><br><br>
+        <input type="text" id="name" placeholder="Nombre del Cliente"><br><br>
+        <input type="email" id="email" placeholder="email del Cliente"><br><br>
+        <input type="number" id="age" placeholder="Edad del Cliente"><br><br>
+    </div>
+    <button onclick="GuardarCliente()">Guardar</button>
+    <button onclick="location.href='index.html'">Regresar</button>
+</body>
+</html>
